@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+
+
+header {
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+}
+
+/* NAV */
+
+.burger_icon {
+    top: 5vw;
+    left: 5vw;
+    position: fixed;
+    z-index: 4;
+}
+.bar {
+    width: 3vw;
+    height: 0.5vw;
+    margin-bottom: 0.5vw;
+    background-color: #1f1c1c;
+}
+
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.menu li {
+    padding: 1.1vw;
+    text-align: center;
+    font-size: 1.7vw;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 5vw;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 3;
+}
+
+.bar_hidden.active {
+    visibility: hidden;
+}
+
+.dark_mode {
+    width: 10%;
+    margin: auto auto 10px auto;
+    font-size: 1vw;
+}
+
+/* FIN NAV */
+
+
+
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    font-size: 6vw;
+    margin: 1vw 0;
+    color: rgb(120, 120, 104);
+}
+
+#descriptif {
+    margin: 5vw 10vw;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2vw;
+}
+
+#barre-div {
+    border-radius: 3px;
+    display: block;
+    margin: 3vw auto;
+    width: 90%;
+    height: 8px;
+    background-color: rgba(106, 82, 82, 0.4);
+
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(120, 120, 114);
+    margin: 2vw;
+}
+
+
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 5vw 10vw;
+    justify-content: space-around;
+}
+
+section {
+    width: 40%;
+}
+
+section img {
+    width: 100%;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+section img:hover {
+    opacity: 0.7;
+}
+
+section p {
+    margin: 2vw 0;
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+}
+
+h5 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    margin: 1vw;
+}
+
+    /* FORMULAIRE CONTACT */
+
+#formulaire {
+    width: 100%;
+    padding: 6vw 15vw;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+}
+
+#formulaire button {
+    text-align: center;
+    width: 13vw;
+    height: 4vw;
+    border-radius: 10px;
+    border: 1.5px solid rgb(210, 163, 53);
+    background-color: #f1d893;
+    font-size: 1.3vw;
+    margin: 2vw;
+
+    transition: 0.3s;
+
+    display: none;
+} #formulaire button:hover {
+    background-color: #eee898;
+}
+
+form input{
+    width: 40%;
+}
+
+#message {
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#contact_numcomm_div{
+    margin: 3vw 0;
+}
+
+#submit_message {
+    margin-top: 2vw;
+}
+
+
+
+
+    /* CREATION DE COMPTE */
+
+#inscription_div {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 241, 228);
+    z-index: 2;
+    top: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+.return_button {
+    cursor: pointer;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    transition: 0.2s;
+    width: 20%;
+    margin: auto;
+} .return_button:hover {color:rgb(120, 120, 104); background-color: #f8f4f4;}
+
+#inscription_content{
+    text-align: center;
+    width: 100%;
+    padding: 3% 20% 3% 20%;
+}
+
+
+#inscription_form>* {
+    margin-bottom: 5px;
+}
+
+#inscription_form input {
+    text-align: center;
+}
+
+.inscription_form_input {
+    font-size: 2vw;
+    width: 100%;
+}
+
+h4{
+    font-size: 3.5vw;
+}
+
+.input_camp {
+    width: min-content;
+}
+
+#submit_inscription {
+    height: 3vw;
+    width: 10vw;
+    border-radius: 20px;
+    margin:  20px auto 0 auto;
+}
+
+
+.confirmation {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    font-size: 3vw;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #fff;
+    padding: 3vw;
+    border-radius: 10px;
+    border: 2px solid grey
+}
+
+    /* CONNECTION COMPTE */
+
+#connection_div {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 241, 228);
+    z-index: 2;
+    top: 0;
+    font-family: 'Kanit', sans-serif;
+    
+}
+    
+#connection_content{
+    text-align: center;
+    width: 100%;
+    padding: 3% 20% 3% 20%;
+}
+    
+    
+#connection_form>* {
+    margin-bottom: 5px;
+}
+    
+#connection_form input {
+    text-align: center;
+}
+    
+.connection_form_input {
+    font-size: 2vw;
+    width: 100%;
+}
+    
+    
+.input_camp {
+    width: min-content;
+}
+    
+#submit_conection {
+    height: 3vw;
+    width: 10vw;
+    border-radius: 20px;
+    margin:  20px auto 0 auto;
+}
+
+/* CARROUSSEL */
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img_carroussel {
+    width: 100vw;
+    height: 80vh;
+}
+
+    
+
+
+
+/* FOOTER PUIS RESPONSIVE */
+
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(104, 77, 77, 0.4);
+    font-size: 2vw;
+}
+footer p {
+    padding: 1vw;
+    font-family: 'Exo 2', sans-serif;
+    cursor: default;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .menu li {
+        padding: 5vw;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .menu li {
+        padding: 10vw;
+        font-size: 3vw;
+    }
+    .dark_mode {
+        width: 20%;
+        font-size: 2vw;
+    }
+    nav ul {
+        margin: 0;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 4vw;
+    }
+    #formulaire button{
+        width: 20vw;
+        height: 5vw;
+        font-size: 2vw;
+    }
+    h4 {
+        font-size: 4vw;
+        margin: 2vw 0;
+    }
+    .return_button {
+        font-size: 2vw;
+    }
+    #submit_inscription {
+        width: 20vw;
+        height: 5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size: 4vw;
+    }
+    section {
+        width: 80%;
+    }
+    section p {
+        margin: 5vw 0;
+    }
+    .img_carroussel {
+        height: 50vh;
+    }
+    h4 {
+        font-size: 5vw;
+        margin: 3vw 0;
+    }
+    .return_button {
+        font-size: 3vw;
+    }
+    #submit_inscription {
+        width: 25vw;
+        height: 7vw;
+    }
+}
+

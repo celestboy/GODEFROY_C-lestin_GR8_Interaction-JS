@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/a-propos.css">
+
+    <title>Terrain airsoft - à propos</title>
+
+    <link rel="icon" href="images/logo.png">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Josefin+Sans:wght@500&family=Kanit:wght@500&family=Montserrat:wght@600&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <img src="images/militaire3.jpg" alt="3 militaires dans la forêt">
+    </header>
+
+    <nav class="burger_menu">
+        <div class="burger_icon" id="burger_icon">
+            <div class="bar bar_hidden"></div>
+            <div class="bar"></div>
+            <div class="bar bar_hidden"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="reserver.html">R&#201;SERVER</a></li>
+            <li><a href="a-propos.html">&#192; PROPOS</a></li>
+            <button class="dark_mode">Mode sombre</button>
+        </ul>
+
+    </nav>
+
+    <h1 id="titre_a-propos">Notre histoire...</h1>
+
+    <p id="descriptif">Chez airsoft company, nous croyons en l'airsoft depuis ses débuts et avons
+    décidé en 2023 de fonder notre propre association fièrement affiliée à la
+    FFA (Fédération Française d'airsoft). Nous avons alors ouvert notre premier
+    terrain airsoft proposant une expérience unique de par son emplacement situé
+    en pleine forêt ainsi que ses nombreux bâtiments et cachettes permettant un
+    style de jeu plus que complet mêlant tratégie et tactique.</p>
+
+    <div id="barre-div"></div>
+
+    <h2>Choisissez votre camp :</h2>
+
+
+    <main>
+        <section id="camo_div">
+            <img src="images/militaire4.jpg" alt="militaire en camo">
+            <p>Le camp camo <br> Pour le côté militaire</p>
+        </section>
+
+
+        <section id="civil_div">
+            <img src="images/militaire5.jpg" alt="militaire en civil">
+            <p>Le camp civil <br> Pour le côté forces spéciales</p>
+        </section>
+    </main>
+
+
+    <h2>Le terrain :</h2>
+
+    <swiper-container class="mySwiper" pagination="true" pagination-dynamic-bullets="true">
+        <swiper-slide><img src="images/carroussel/carroussel1.jpg" class="img_carroussel"></swiper-slide>
+        <swiper-slide><img src="images/carroussel/carroussel2.jpg" class="img_carroussel"></swiper-slide>
+        <swiper-slide><img src="images/carroussel/carroussel3.jpg" class="img_carroussel"></swiper-slide>
+        <swiper-slide><img src="images/carroussel/carroussel4.jpg" class="img_carroussel"></swiper-slide>
+        <swiper-slide><img src="images/carroussel/carroussel5.jpg" class="img_carroussel"></swiper-slide>
+        <swiper-slide><img src="images/carroussel/carroussel6.jpg" class="img_carroussel"></swiper-slide>
+        <swiper-slide><img src="images/carroussel/carroussel7.jpg" class="img_carroussel"></swiper-slide>
+    </swiper-container>
+
+
+        <!-- FORMULAIRE DE CONTACT -->
+
+    <h5>Contact :</h5>
+
+    <div id="formulaire">
+        <h3></h3>
+        <button id="inscription_btn">S'inscrire</button>
+        <button id="connection_btn">Se connecter</button>
+
+        <div id="formulaire_content">
+
+            <form action="" onsubmit="return false">
+            
+                <label for="email">Confirmation adresse mail :</label>
+                <input type="email" id="mail_confirmed">
+            
+        
+                <div id="contact_numcomm_div">
+                    <label for="num_comm">Numéro de commande (facultatif) :</label>
+                    <input type="text" id="num_comm">
+                </div>
+
+            
+                <label for="message">Message :</label>
+                <textarea id="message"></textarea>
+
+                <input type="submit" id="submit_message">
+
+                <p id="message_error"></p>
+            
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation_message" class="confirmation">
+        <p>Message envoyé avec succès</p>
+    </div>
+
+        <!-- FORMULAIRE CREATION DE COMPTE -->
+
+    <div id="inscription_div">
+        <div id="inscription_content">
+            <p class="return_button" id="return_button_inscription">retour</p>
+
+            <form action="" onsubmit="return false" id="inscription_form">
+                <h4>Création de votre compte</h4>
+
+                <label for="mail_inscription">Adresse mail :</label>
+                <input type="email" id="mail_inscription" class="inscription_form_input" required>
+
+                <label for="tel_inscription">Num. téléphone :</label>
+                <input type="tel" id="tel_inscription" class="inscription_form_input" required>
+
+                <label for="pseudo_inscription">Pseudo :</label>
+                <input type="text" id="pseudo_inscription" class="inscription_form_input" required>
+
+                <label for="mdp_inscription">Mot de passe :</label>
+                <input type="password" id="mdp_inscription" class="inscription_form_input" required>
+
+                <fieldset>
+                    <legend>Votre camp (facultatif) :</legend>
+
+                    <label for="camo">camo</label>
+                    <input type="radio" name="camp" id="camo" class="input_camp">
+                    <label for="civil">civil</label>
+                    <input type="radio" name="camp" id="civil" class="input_camp">
+                </fieldset>
+
+                <input type="submit" id="submit_inscription">
+
+                <p id="password_error_inscription"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation_creation" class="confirmation">
+        <p>Compte créé avec succès</p>
+    </div>
+
+        <!-- FORMULAIRE CONNECTION COMPTE -->
+
+    <div id="connection_div">
+        <div id="connection_content">
+            <p class="return_button" id="return_button_connection">retour</p>
+    
+            <form action="" onsubmit="return false" id="connection_form">
+                <h4>Connection à votre compte</h4>
+    
+                <label for="mail_connection">Adresse mail / pseudo :</label>
+                <input type="text" id="mail_connection" class="inscription_form_input" required>
+    
+                <label for="mdp_connection">Mot de passe :</label>
+                <input type="password" id="mdp_connection" class="inscription_form_input">
+        
+                <input type="submit" id="submit_connection">
+    
+                <p id="password_error_connection"></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation_connection" class="confirmation">
+        <p>Vous êtes connecté à votre compte</p>
+    </div>
+
+
+    <footer>
+
+        <p>Airsoft Company - Tous droits réservés</p>
+
+    </footer>
+
+    <script src="JS/a-propos.js"></script>
+    <script src="JS/commun.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+</body>
+</html>
